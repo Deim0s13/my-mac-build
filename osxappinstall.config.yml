@@ -1,4 +1,5 @@
 ---
 - name: Install from the Apple app store.
-  shell: mas install {{ item }}
-    -   
+  mas_installed_apps: 
+    - { id: 1352778147, name: "Bitwarden" }
+    - { id: 1514292645, name: "PiBar" }
