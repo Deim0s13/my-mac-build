@@ -1,0 +1,21 @@
+---
+downloads: ~/.ansible-downloads/
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip
+  - podman
+  - podman-compose
+  - git
+  - github/gh/gh
+  - sqlite
+  - qemu
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - iterm2
+  - mimestream
+  - utm 
