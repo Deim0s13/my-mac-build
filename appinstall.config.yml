@@ -10,6 +10,13 @@ homebrew_installed_packages:
   - sqlite
   - qemu
   - zsh-history-substring-search
+  - kubernetes-cli
+  - kubernetes-helm
+  - zsh
+  - openshift-cli
+  - odo-dev
+  - vim
+  - unzip
 
 homebrew_taps:
   - homebrew/core
@@ -21,5 +28,16 @@ homebrew_cask_apps:
   - mimestream
   - utm 
   - slack
-  - google-chrome
-  
+  - balenaetcher
+  - browserosaurus
+  - discord
+  - google-drive
+  - grammarly-desktop
+  - little-snitch
+  - podman-desktop
+  - signal
+  - switchresx
+  - fantastical
+  - whatsapp
+  state: present
+  update_homebrew: yes
