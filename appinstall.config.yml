@@ -1,43 +1,44 @@
 ---
-downloads: ~/.ansible-downloads/
+- name: Install my homebrew packages.
+  homebrew_installed_packages:
+    # - ansible # Installed via Pip
+    - podman
+    - podman-compose
+    - git
+    - github/gh/gh
+    - sqlite
+    - qemu
+    - zsh-history-substring-search
+    - kubernetes-cli
+    - kubernetes-helm
+    - zsh
+    - openshift-cli
+    - odo-dev
+    - vim
+    - unzip
 
-homebrew_installed_packages:
-  # - ansible # Installed via Pip
-  - podman
-  - podman-compose
-  - git
-  - github/gh/gh
-  - sqlite
-  - qemu
-  - zsh-history-substring-search
-  - kubernetes-cli
-  - kubernetes-helm
-  - zsh
-  - openshift-cli
-  - odo-dev
-  - vim
-  - unzip
+- name: Installing homebrew taps.
+  homebrew_taps:
+    - homebrew/core
+    - homebrew/cask
 
-homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
-
-homebrew_cask_appdir: /Applications
-homebrew_cask_apps:
-  - iterm2
-  - mimestream
-  - utm 
-  - slack
-  - balenaetcher
-  - browserosaurus
-  - discord
-  - google-drive
-  - grammarly-desktop
-  - little-snitch
-  - podman-desktop
-  - signal
-  - switchresx
-  - fantastical
-  - whatsapp
-  state: present
-  update_homebrew: yes
+- name: Setting applications folder for homebrew casks.
+  homebrew_cask_appdir: /Applications
+  
+- name: Install my core apps via homebrew casks.  
+  homebrew_cask_apps:
+    - iterm2
+    - mimestream
+    - utm 
+    - slack
+    - balenaetcher
+    - browserosaurus
+    - discord
+    - google-drive
+    - grammarly-desktop
+    - little-snitch
+    - podman-desktop
+    - signal
+    - switchresx
+    - fantastical
+    - whatsapp
