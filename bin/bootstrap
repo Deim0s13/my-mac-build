@@ -5,3 +5,5 @@ sudo xcodebuild -license
 sudo pip3 install --upgrade pip
 pip3 install ansible
 ansible-galaxy install -r requirements.yml
+
+ansible-playbook my-macos-apps.yml --ask-become-pass

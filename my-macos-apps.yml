@@ -3,8 +3,8 @@
   hosts: localhost
 
   vars_files:
-    - appinstall.config.yml
-    - osxappinstall.config.yml
+    - homebrewinstalls.config.yml
+    - appstoreinstalls.config.yml
 
   pre_tasks:
     - name: Include playbook configuration.
