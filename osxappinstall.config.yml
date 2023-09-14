@@ -1,0 +1,4 @@
+---
+- name: Install from the Apple app store.
+  shell: mas install {{ item }}
+    -   
