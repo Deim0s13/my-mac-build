@@ -1,6 +1,6 @@
 ---
 - name: Configure host.
-  host: localhost
+  hosts: localhost
 
   vars_files:
     - appinstall.config.yml
@@ -9,9 +9,9 @@
     - name: Include playbook configuration.
       include_vars: "{{ item }}"
       with_fileglob:
-        - "{{ playbook_dir }}"/config.yml
+        - "{{ playbook_dir }}/config.yml"
       tags: ['always']
-    - name: Ensure homebrew bin is in path
+    - name: Ensure homebrew bin is in path.
       ansible.builtin.lineinfile:
         path: /etc/paths
         state: present

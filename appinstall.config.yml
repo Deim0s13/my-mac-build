@@ -9,6 +9,7 @@ homebrew_installed_packages:
   - github/gh/gh
   - sqlite
   - qemu
+  - zsh-history-substring-search
 
 homebrew_taps:
   - homebrew/core
@@ -19,3 +20,6 @@ homebrew_cask_apps:
   - iterm2
   - mimestream
   - utm 
+  - slack
+  - google-chrome
+  
